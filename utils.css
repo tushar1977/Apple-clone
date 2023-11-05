@@ -1,0 +1,28 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.white{
+    text-decoration: none;
+    color: white;
+}
+
+.black{
+    text-decoration: none;
+    color: #000;
+}
+
+ul li{
+    list-style: none;
+}
+
+.image_short{
+    width: 100%;
+    height: 1vh;
+}
+
+.img-watch{
+    width: 3vw;
+    height: 0.2vh;
+}

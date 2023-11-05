@@ -1,0 +1,429 @@
+@font-face {
+  font-family: font_1;
+  src: url(font/sf-pro-display_semibold.ttf);
+}
+
+@font-face {
+  font-family: font_light;
+  src: url(font/sf-pro-display_regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 7vh;
+  background-color: grey;
+  display: flex;
+  gap: 2vw;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f2f2f2;
+  align-items: center;
+  font-size: 14px;
+  font-family: font_1;
+  z-index: 50;
+}
+
+.main i {
+  font-size: 1.3vw;
+}
+
+.part1 {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  background-color: #000;
+  background-position: center;
+
+  background-image: url("Images/image_1.jpg");
+  background-size: cover; /* Ensuring it covers the div */
+  /* Other styles as needed */
+
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+
+.text_part_1 {
+  position: absolute;
+
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 1vw;
+  top: 10%;
+}
+
+.text_part_1 h1 {
+  font-size: 3.6vw;
+  font-family: font_1;
+}
+.text_part_1 p {
+  font-size: 1.7vw;
+  font-family: font_light;
+}
+
+.link {
+  gap: 2vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link a {
+  text-decoration: none;
+  position: re;
+  font-family: font_light;
+  font-size: 1.4vw;
+  color: #0b6ccf;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+.link a i {
+  font-size: 1.7vw;
+  gap: 0.8vw;
+}
+
+.part2 {
+  width: 100%;
+  
+  background-color: #f5f5f7;
+  background-position: center;
+   background-image: url("Images/hero_iphone15_announce__uuemlcwczn6u_mediumtall_2x.jpg");
+  
+}
+
+
+.text_part_2 {
+  color: #333;
+}
+
+.part3 {
+  width: 100%;
+  background-color: #fafafa;
+  background-position: center;
+   background-image: url("Images/image_3.jpg");
+}
+
+.text_part_3 {
+  color: #333;
+}
+
+.part-4 {
+  width: 100%;
+  display: flex;
+  margin-top: 1.2vw;
+  gap: 1.2vw;
+}
+
+.part4-1{
+  background-image: url(Images/image_4.jpg);
+}
+.part4-2{
+  background-image: url(Images/image_holiday.jpg);
+}
+.part4-3{
+  background-image: url(Images/promo_apple_watch_series_9_order__b3u85rm9zf6u_large_2x.jpg);
+}
+
+.part4-4{
+  background-image: url(Images/image_5.jpg);
+}
+
+.part4-1 .part4-2 {
+  width: 60%;
+  height: 50vh;
+
+  background-color: #fbfbfa;
+}
+
+.text_part_4 h1 {
+  font-size: 2rem;
+  color: #000;
+  font-family: font_1;
+}
+
+.text_part_4 p {
+  font-size: 1.3vw;
+  color: #000;
+  font-family: font_light;
+}
+
+.text_part_5 p {
+  font-size: 1.3vw;
+  color: #fff;
+  font-family: font_light;
+}
+
+.slider-part {
+  width: 100%;
+  padding: 2vh 0vw;
+  height: 70vh;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 90%;
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-1 {
+  background-image: url(Images/1.jpg);
+}
+.swiper-2 {
+  background-image: url(Images/2.jpg);
+}
+.swiper-3 {
+  background-image: url(Images/3.jpg);
+}
+.swiper-4 {
+  background-image: url(Images/4.jpg);
+}
+.swiper-5 {
+  background-image: url(Images/5.jpg);
+}
+
+.swiper-6 {
+  background-image: url(Images/7.jpg);
+}
+
+.footer {
+  width: 100%;
+  height: 25vh;
+  background-color: #f4f5f6;
+  display: flex;
+  font-weight: lighter;
+  justify-content: center;
+  align-items: center;
+  font-family: font_light;
+  font-size: 12px;
+  padding-left: 1.2vw;
+  font-size: 1vw;
+}
+
+.res-main {
+  display: none;
+}
+
+.ri-menu-3-line {
+  display: none;
+}
+
+.sub-menu{
+  top: -100%;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 95vh;
+  transition: all cubic-bezier(0.95, 0.05, 0.795, 0.035), 1s;
+  /* background-color: red; */
+  pointer-events: none;
+}
+
+.sub-top{
+  height: 50vh;
+  display: flex;
+  gap: 2vh ;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  padding: 5vw 25vw;
+}
+
+.sub-top a{
+  text-decoration: none;
+  font-size: 1.4vw;
+  color: #333;
+}
+
+.sub-btm{
+  width: 100%;
+  height: 45vh;
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+/* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  * {
+    font-family: font_1, font_light;
+  }
+
+  .sub-menu{
+    display: none;
+  }
+
+  .part1 {
+    /* position: absolute; */
+    background-image: url("Images/res/hero_1.jpg");
+    background-position: center;
+    overflow: hidden;
+    background-size: cover;
+    /* border: 1px solid red; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+
+  .text_part_1 {
+    gap: 2vh;
+  }
+
+  .text_part_1 h1 {
+    font-size: 30px;
+  }
+  .text_part_1 p {
+    font-size: 20px;
+  }
+
+  .link a {
+    font-size: 20px;
+  }
+
+  .link i {
+    size: 2vw;
+  }
+
+  .part2{
+    background-image: url("Images/res/hero_2.jpg");
+    background-position: center;
+    overflow: hidden;
+    size: 0vw;
+    background-size: cover;
+
+  }
+
+  .part3{
+    background-image: url("Images/res/hero_3.jpg");
+    background-position: center;
+    overflow: hidden;
+    size: 0vw;
+    background-size: cover;
+  }
+
+  .slider-part{
+    height: 50vhx;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 0px 1vw;
+  }
+
+  .ri-menu-3-line {
+    display: block;
+  }
+
+  .main li a {
+    display: none;
+  }
+
+  .main ul li i {
+    font-size: 5vw;
+  }
+
+  .res-main {
+    top: -100%;
+    position: absolute;
+    z-index: 99;
+    padding: 10vw 10vw;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    gap: 3vw;
+    width: 100%;
+    height: 100vh;
+    transition: all cubic-bezier(0.95, 0.05, 0.795, 0.035), 0.5s;
+  }
+
+  .res-main a {
+    font-size: 6.5vw;
+    color: white;
+    font-family: font_1;
+  }
+
+  .res-main i {
+    color: #fff;
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    font-size: 7vw;
+  }
+
+  .part-4{
+    display: inline;
+    gap: 4vw;
+    padding-top: 2vw;
+  }
+
+  .part4-1{
+    padding: 1.2vw 0vw;
+    background-image: url(Images/res/hero_4.jpg);
+    background-color: #FBFAFB;
+  }
+  .part4-2{
+    padding: 1.2vw 0vw;
+    background-image: url(Images/res/hero_5.jpg);
+    background-color: #FBFAFB;
+  }
+  .part4-3{
+    padding: 1.2vw 0vw;
+    background-image: url(Images/res/promo_apple_watch_series_9_order__b3u85rm9zf6u_small_2x.jpg);
+    background-color: #000;
+  }
+  .part4-4{
+    padding: 1.2vw 0vw;
+    background-image: url(Images/res/promo_airpods_pro_order__d8xv36p4uwae_small_2x.jpg);
+    background-color: #000;
+  }
+
+  
+}
